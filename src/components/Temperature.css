@@ -1,0 +1,150 @@
+.app-title {
+    text-align: center;
+    font-weight: 600;
+    color: #939393;
+    padding: 10px 0 10px 0;
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 500px) {
+    .app-title {
+        display: none;
+    }
+}
+
+.temperature__layout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.temperature__layout-thermometer {
+    width: 120px;
+    text-align: center;
+}
+
+.temperature__layout-results {
+    width: 400px;
+    height: 500px;
+    text-align: right;
+    padding-top: 200px;
+}
+
+.temperature__layout-results-feeling {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 300;
+    padding: 10px;
+    color: white;
+    border-radius: 20px;
+    width: 30%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+
+}
+
+.temp-grid {
+    min-height: 100%;
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+@media only screen and (max-width: 500px) {
+    .temp-grid {
+        display: block;
+        width: 200px;
+    }
+}
+
+.temp-grid>div {
+    display: flex;
+    flex-basis: calc(50% - 40px);
+    justify-content: center;
+    flex-direction: column;
+}
+
+.temp-grid>div>div {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.temp-grid-box {
+    margin: 5px;
+    border: 1px solid #939393;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.temp-grid-box-title {
+    font-size: 12px;
+    font-weight: 700;
+    color: #939393;
+}
+
+.temp-grid-box-value {
+    font-size: 30px;
+    font-weight: 300;
+    color: #939393;
+}
+
+.current-value {
+    font-size: 20px;
+    width: 120px;
+    font-weight: 300;
+    color: white;
+    margin-top: 10px;
+    padding: 5px;
+    background-color: #1E88E5;
+    border-radius: 5px;
+    border-bottom: 2px solid #7e7e7e;
+}
+
+.range-value-max {
+    font-size: 12px;
+    color: #939393;
+    width: 120px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.range-value-min {
+    width: 120px;
+    text-align: center;
+    margin-top: 35px;
+    font-size: 12px;
+    color: #939393;
+}
+
+.select {
+    padding-right: 20px;
+    display: inline-flex;
+}
+
+.circle {
+    margin: 2px;
+    line-height: 20px;
+    background-color: white;
+    color: #939393;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    font-size: 10px;
+    text-align: center;
+    border: 1px solid #939393;
+    cursor: pointer;
+    transition: background-color .25s ease-in-out;
+    -moz-transition: background-color .25s ease-in-out;
+    -webkit-transition: background-color .25s ease-in-out;
+}
+
+.circle:hover {
+    background-color: #eeeeee;
+}
+
+.circle-selected {
+    background-color: #939393;
+    color: white;
+}
